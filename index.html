@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOG</title>
-</head>
-<body>
-    <select id="menu">
-        <option value="log_an_error" onclick="logError()">Log an error</option>
-        <option value="log_an_warning">Log a warning</option>
-        <option value="view_errors">View errors</option>
-        <option value="view_warnings">View warnings</option>
-        <option value="view_all">View all long entires</option>
+  </head>
+  <body>
+    <select id="menu" onchange="menuClick()">
+      <option value=""></option>
+      <option value="log_an_error">Log an error</option>
+      <option value="log_an_warning">Log an warning</option>
+      <option value="view_errors">View errors</option>
+      <option value="view_warnings">View warnings</option>
+      <option value="view_all">View all long entires</option>
     </select>
+    <button onclick="sendPost('/invalid')">Send Invalid request</button>
     <script type="text/javascript" src="client.js"></script>
-</body>
+  </body>
 </html>
